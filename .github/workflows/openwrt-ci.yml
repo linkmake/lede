@@ -53,6 +53,7 @@ jobs:
         run: |
           echo 'src-git helloworld https://github.com/fw876/helloworld' >> ./feeds.conf.default
           echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+          echo 'src-git mosdns https://github.com/sbwml/luci-app-mosdns.git;v5' >> feeds.conf.default
           sed -i 's/\"#src-git\"/\"src-git\"/g' ./feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
@@ -155,6 +156,7 @@ jobs:
           CONFIG_boost-runtime-shared=y
           CONFIG_boost-static-and-shared-libs=y
           CONFIG_boost-variant-release=y
+          CONFIG_PACKAGE_luci-app-mosdns=y
           #
           # ========================固件定制部分结束========================
           #
