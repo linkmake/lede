@@ -105,6 +105,7 @@ jobs:
           CONFIG_PACKAGE_kmod-sit=y
           CONFIG_PACKAGE_kmod-udptunnel4=y
           CONFIG_PACKAGE_kmod-udptunnel6=y
+          CONFIG_PACKAGE_kmod-wireguard=y
           CONFIG_PACKAGE_libltdl=y
           CONFIG_PACKAGE_liblua5.3=y
           CONFIG_PACKAGE_libstdcpp=y
@@ -130,10 +131,13 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Tuic_Client=y
+          CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-ramfree-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn=y
           CONFIG_PACKAGE_luci-proto-ipv6=y
+          CONFIG_PACKAGE_luci-proto-wireguard=y
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-material=y
           CONFIG_PACKAGE_luci-theme-atmaterial=y
@@ -151,13 +155,14 @@ jobs:
           CONFIG_PACKAGE_v2ray-plugin=y
           CONFIG_PACKAGE_xray-plugin=y
           CONFIG_PACKAGE_mosdns=y
+          CONFIG_PACKAGE_wireguard-tools=y
           CONFIG_TARGET_KERNEL_PARTSIZE=256
           CONFIG_TARGET_ROOTFS_PARTSIZE=512
           CONFIG_boost-compile-visibility-hidden=y
           CONFIG_boost-runtime-shared=y
           CONFIG_boost-static-and-shared-libs=y
           CONFIG_boost-variant-release=y
-          #
+          # https://hackyes.github.io/openwrt-menuconfig/index.html
           # ========================固件定制部分结束========================
           #
           EOF
