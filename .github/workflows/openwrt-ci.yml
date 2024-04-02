@@ -128,9 +128,12 @@ jobs:
           CONFIG_PACKAGE_luci-app-mosdns=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_V2ray_Plugin=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Tuic_Client=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_MosDNS=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
